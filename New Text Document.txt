@@ -1,0 +1,24 @@
+http://lesscss.org/#download-options
+
+
+LESS est implémenté en JavaScript
+      un langage pour simplifier les CSS
+
+AVANTAGE
+      meilleure organisation et donc lisibilité des feuilles de style,
+       rapidité de développement
+       et rapidité de modification.
+      En effet, LESS offre de nouvelles fonctionnalités très utiles.
+      Tout d’abord, les variables
+
+      notion Héritage
+
+Cette technique permet d'avoir un code moins répétitif et plus joli.
+
+Importation de fichiers
+
+Vous pouvez utiliser la directive @import sur des fichiers .less
+
+commentaire
+
+L'instruction // permet d'ajouter un commentaire sur une seule ligne.

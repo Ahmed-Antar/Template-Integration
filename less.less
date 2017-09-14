@@ -1,0 +1,242 @@
+@color_1: #333333;
+@color_2: #a0ce4e;
+@color_3: #343333;
+@color_4: #777676;
+@color_5: #b71465;
+@color_6: orange;
+@color_7: #76d411;
+@color_8: #747474;
+@color_9: #dddddd;
+@color_10: white;
+@color_11: #8c8989;
+@color_12: #bfbfbf;
+@color_13: #706e6e;
+@font-family_1: arial;
+@font-family_2: Trebuchet MS;
+@font-family_3: Arial;
+@font-family_4: Myriad Pro;
+
+body {
+	margin: 0;
+	padding: 0;
+}
+#container {
+	width: 1300px;
+	margin: 0 auto;
+}
+#header {
+	height: 86px;
+	#logo {
+		padding-left: 248px;
+		float: left;
+		margin-top: 28px;
+	}
+	#menu {
+		float: right;
+		margin-right: 130px;
+		ul {
+			margin-top: 40px;
+			li {
+				display: inline-block;
+				margin-right: 50px;
+				a {
+					color: @color_1;
+					font-family: @font-family_1;
+					font-size: 14px;
+					text-decoration: none;
+					padding-top: 39px;
+					&:hover {
+						color: @color_2;
+						border-top: 2px solid #215bb7;
+					}
+				}
+				a.current {
+					color: @color_2;
+					border-top: 2px solid #215bb7;
+				}
+			}
+		}
+	}
+}
+#main {
+	margin: 20px 0;
+	margin: ;
+	h1 {
+		font-family: @font-family_2;
+		font-size: 46px;
+		text-transform: uppercase;
+		letter-spacing: 15px;
+		color: @color_3;
+		text-align: center;
+		margin: 0;
+	}
+	hr {
+		width: 155px;
+		height: 3px;
+		background-color: #307bd1;
+		margin-top: 0px;
+	}
+	p {
+		font-family: @font-family_3;
+		font-size: 22px;
+		color: @color_4;
+		text-align: center;
+		padding: 0 90px;
+	}
+}
+#blocks {
+	background-color: #e7e7e9;
+	height: auto;
+	display: inline-block;
+	width: 1300px;
+	.block {
+		width: 300px;
+		float: left;
+		margin-left: 100px;
+		h1 {
+			text-align: center;
+			font-family: @font-family_2;
+			font-size: 26px;
+			color: @color_5;
+		}
+		h1.tv {
+			color: @color_6;
+		}
+		h1.mobile {
+			color: @color_7;
+		}
+		p {
+			font-family: @font-family_4;
+			font-size: 13px;
+			color: @color_8;
+			line-height: 20px;
+		}
+		a {
+			float: right;
+			font-family: @font-family_4;
+			font-size: 12px;
+			color: @color_3;
+			text-decoration: none;
+		}
+	}
+	.carre {
+		width: 100px;
+		height: 100px;
+		background-color: #d71688;
+		border-radius: 50px;
+		margin: 0 auto;
+		img {
+			margin-top: 25px;
+			margin-left: 15px;
+		}
+	}
+	.carre.tv {
+		background-color: orange;
+	}
+	.carre.mobile {
+		background-color: #76d411;
+	}
+}
+#clients {
+	h1 {
+		font-family: @font-family_2;
+		font-size: 46px;
+		text-transform: uppercase;
+		letter-spacing: 15px;
+		color: @color_3;
+		text-align: center;
+		margin: 0;
+	}
+	hr {
+		width: 155px;
+		height: 3px;
+		background-color: #307bd1;
+		margin-top: 0px;
+	}
+	img.logos {
+		vertical-align: middle;
+		margin-left: 50px;
+	}
+}
+footer {
+	#footer1 {
+		background-color: #363839;
+		border-top: 12px solid #e9eaee;
+		display: inline-block;
+		width: 1300px;
+		.bloc-footer {
+			width: 225px;
+			float: left;
+			margin-left: 80px;
+			span {
+				color: @color_9;
+			}
+			h2 {
+				font-family: @font-family_4;
+				font-size: 28px;
+				color: @color_10;
+			}
+			h1 {
+				font-family: @font-family_4;
+				font-size: 13px;
+				font-weight: bold;
+				color: @color_9;
+				text-transform: uppercase;
+			}
+			p {
+				font-family: @font-family_4;
+				font-size: 13px;
+				color: @color_11;
+			}
+			ul {
+				padding: 0;
+				li {
+					list-style: none;
+					color: @color_12;
+					font-family: @font-family_4;
+					font-size: 13px;
+					padding: 10px 0;
+					border-top: 1px solid #585151;
+					border-bottom: 1px solid #282a2b;
+					&:first-child {
+						border-top: none;
+					}
+					&:last-child {
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+	#footer2 {
+		background-color: #282a2b;
+		border-top: 1px solid #4b4c4d;
+		height: 60px;
+		padding: 5px 50px;
+		p {
+			margin: 20px 0;
+			color: @color_13;
+			font-family: @font-family_4;
+			font-size: 12px;
+			float: left;
+			span {
+				color: @color_10;
+			}
+		}
+	}
+}
+#reseaux-sociaux {
+	float: right;
+	padding: 15px 35px;
+	img {
+		margin-right: 15px;
+	}
+	a {
+		&:hover {
+			background-image: url('../images/fb-hover.png');
+			width: 200px;
+			position: relative;
+			top: 150px;
+		}
+	}
+}
